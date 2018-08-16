@@ -1,0 +1,6 @@
+<div ng-if="weatherVm.weather">
+  <h4>{{ weatherVm.weather.day | date }}</h4>
+  <img ng-src="weatherVm.weather.img">
+  <h3>{{ weatherVm.weather.weather }}</h3>
+  <label>{{ weatherVm.weather.description }} @ {{ weatherVm.weather.temp }}°F</label>
+</div>

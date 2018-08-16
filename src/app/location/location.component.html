@@ -1,0 +1,15 @@
+<div class="container">
+  <div id="home-search" class="row">
+    <div class="col-12">
+      <h1>{{ locationVm.weather.name }}</h1>
+    </div>
+    <div class="col-12">
+      <search-location></search-location>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <weather-card location="locationVm.location" only-content="false"></weather-card>
+    </div>
+  </div>
+</div>

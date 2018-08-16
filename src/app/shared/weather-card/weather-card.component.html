@@ -1,0 +1,33 @@
+<div class="card" ng-if="weatherCardVm.location !== undefined">
+  <md-card class="card">
+    <md-card-title>
+      <md-card-title-text>
+        <h3>{{weatherCardVm.weather.name}}</h3>
+      </md-card-title-text>
+    </md-card-title>
+
+    <md-card-content layout="column" class="container card-content">
+      <div class="row">
+        <div class="col-12">
+          <h3>Today's Forecast</h3>
+        </div>
+        <div class="col-12">
+          <weather weather="weatherCardVm.weather.today"></weather>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Next 3 Days</h3>
+        </div>
+        <div ng-repeat="day in weatherCardVm.weather.upcoming " class="col-12 col-sm-4">
+          <weather weather="day "></weather>
+        </div>
+      </div>
+    </md-card-content>
+    <md-card-actions>
+      <md-button class="md-raisesd md-hue-1s md-prismary md-button-left " ng-if="weatherCardVm.onlyContent">
+        <a ui-sref="app.home.location({lat: weatherCardVm.weather.coordinates.lat, lon: weatherCardVm.weather.coordinates.lon})">VIEW CITY</a>
+      </md-button>
+    </md-card-actions>
+  </md-card>
+</div>

@@ -1,0 +1,17 @@
+<div layout="column" layout-align="">
+  <div class="home container">
+    <div id="home-search" class="row">
+      <div class="col-12">
+        <h2>Home</h2>
+      </div>
+      <div class="col-12">
+        <search-location></search-location>
+      </div>
+    </div>
+    <div class="row">
+      <div flex ng-repeat="location for homeVm.locations" class="col-xs-12 col-lg-6">
+        <weather-card location="location.coordinates" only-content="true"></weather-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
+  font-size: 16px;
+  text-decoration: none;
+}
+.app-body {
+  height: 100%;
+}
+.title {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+.weather-navbar {
+  background-color: #689f38 !important;
+}
+.weather-navbar h3 {
+  color: white !important;
+  font-weight: 700;
+}
+.card {
+  margin: 15px;
+  background: white;
+}
+
+.right-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p {
+  color: #212121 !important;
+  font-weight: normal;
+}
+h3 {
+  font-size: 17px;
+}
+label,
+h4 {
+  font-size: 14px;
+}
