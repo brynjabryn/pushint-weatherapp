@@ -4,19 +4,14 @@ angular.module('location').component('location', {
   templateUrl: 'app/location/location.component.html',
   controllerAs: 'locationVm',
   controller: [
-    '$stateParams',
-    'weatherSvc',
-    'Weather',
     '$timeout',
     '$state',
-    function LocationController($timeout, $stateParams, weatherSvc, Weather, $state) {
+    'weatherSvc',
+    'Weather',
+    function LocationController($timeout, $state, weatherSvc, Weather) {
       let locationVm = this;
       location.weather = {};
-      locationVm.location = { lat: $stateParams.lat, lon: $stateParams.lon };
-      console.log($stateParams);
-      console.log($state.params);
-      console.log("locationVm.location", locationVm.location);
-    
+      locationVm.location = { lat: $state.params.lat, lon: $state.params.lon };
 
       locationVm.getWeatherData = function(event) {
         $timeout(function() {
