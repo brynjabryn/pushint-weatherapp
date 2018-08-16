@@ -2,6 +2,7 @@
 
 angular.module('home').component('home', {
   templateUrl: 'app/home/home.component.html',
+  controllerAs: 'homeVm',
   controller: [
     'Weather',
     function HomeController(Weather) {
