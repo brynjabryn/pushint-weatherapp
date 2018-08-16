@@ -10,6 +10,7 @@
     </div>
     <div class="row">
         {{homeVm.locations}}
+        <div ng-repeat="location in homeVm.locations"></div>
 <!--        <div flex ng-repeat="location for homeVm.locations" class="col-xs-12 col-lg-6">-->
         <weather-card location="location.coordinates" only-content="true"></weather-card>
       </div>
