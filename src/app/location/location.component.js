@@ -12,6 +12,7 @@ angular.module('location').component('location', {
       let locationVm = this;
       location.weather = {};
       locationVm.location = { lat: $stateParams.lat, lon: $stateParams.lon };
+      console.log("locationVm.location", locationVm.location);
 
       locationVm.getWeatherData = function(event) {
         $timeout(function() {
