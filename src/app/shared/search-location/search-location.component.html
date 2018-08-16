@@ -1,3 +1,4 @@
 <div class="form-group">
+  {{searchLocationVm}}
   <input vs-google-autocomplete="{ types:['(cities)'] }" vs-latitude="searchLocationVm.search.components.location.lat" vs-longitude="searchLocationVm.search.components.location.long" ng-model="searchLocationVm.search.name" type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
 </div>
