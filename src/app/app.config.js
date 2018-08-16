@@ -24,7 +24,7 @@ angular.module('weatherApp').config([
           }
         }
       })
-      .state('apps.home.location', {
+      .state('app.home.location', {
         url: '/location?lat?lon',
         views: {
           '@app': {
