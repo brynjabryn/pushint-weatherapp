@@ -7,10 +7,11 @@ angular.module('core.weather').factory('Weather', [
       console.log("weatherResource request", $stateParams.lat, $stateParams.lon);
 
     weatherResource = $resource(
-      `https://api.openweathermap.org/data/2.5/forecast/daily?cnt=4&&units=imperial&APPID=cd12cb61c3a3512e0ceffa3c71fec447`,
+//      `https://api.openweathermap.org/data/2.5/forecast/daily?cnt=4&&units=imperial&APPID=cd12cb61c3a3512e0ceffa3c71fec447`,
+      'http://api.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&APPID=cd12cb61c3a3512e0ceffa3c71fec447',
       {
-        lat: $stateParams.lat, 
-        lon: $stateParams.lon
+//        lat: $stateParams.lat, 
+//        lon: $stateParams.lon
       },
       {
         getAll: {
