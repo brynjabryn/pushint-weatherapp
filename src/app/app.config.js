@@ -28,7 +28,7 @@ angular.module('weatherApp').config([
         url: '/location?lat?lon',
         views: {
           '@app': {
-            template: '<location on-loaded="locationVm.getWeatherData(event)"></location>'
+            template: '<location></location>'
           }
         }
       });

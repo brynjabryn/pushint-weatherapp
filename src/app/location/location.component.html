@@ -10,7 +10,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <weather-card location="locationVm.location" only-content="false"></weather-card>
+      <weather-card on-loaded="locationVm.getWeatherData(event)" location="locationVm.location" only-content="false"></weather-card>
     </div>
   </div>
 </div>
