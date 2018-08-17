@@ -26,7 +26,7 @@ angular.module('weatherCard').component('weatherCard', {
         let lon = location.lon;
         Weather.weather.getAll({ lat: lat, lon: lon }).$promise.then(response => {
           weatherCardVm.weather = weatherSvc.decorateWeather(response);
-          weatherCardVm.onLoaded({event:weatherCardVm.weather})
+          weatherCardVm.onLoaded({event:weatherCardVm.weather});
         }).catch(function(err) {
           console.log(err, 'error: geocoding requires latitude and longitude');
         });

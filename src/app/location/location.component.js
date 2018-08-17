@@ -10,14 +10,14 @@ angular.module('location').component('location', {
     'Weather',
     function LocationController($timeout, $state, weatherSvc, Weather) {
       let locationVm = this;
-      location.weather = {};
+      locationVm.weather = {};
       locationVm.location = { lat: $state.params.lat, lon: $state.params.lon };
 
       locationVm.getWeatherData = function(event) {
-        $timeout(function() {
-          locationVm.weather = event;
-          console.log("weather updated?", locationVm.weather);
-        }, 100);
+          console.log("weather updated?", event);
+//        $timeout(function() {
+//          locationVm.weather = event;
+//        }, 100);
       }
     }
   ]
