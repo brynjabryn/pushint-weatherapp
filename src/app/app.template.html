@@ -9,8 +9,9 @@
 
     <md-content flex>
       <md-toolbar layout="row" class="weather-navbar">
-        <!-- TODO: Button should return you to home -->
-        <button md-button class="title">Progressive Weather App</button>
+        <button md-button class="title">
+            <a ui-sref="app.home">Progressive Weather App</a>
+        </button>
       </md-toolbar>
 
       <div ui-view></div>
